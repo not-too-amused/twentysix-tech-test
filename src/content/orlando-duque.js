@@ -1,14 +1,15 @@
-import featuredImageCrop from "../assets/backgrounds/menu-1.png";
+import featuredImageCrop from "../assets/backgrounds/menu-2.png";
 import featuredImage from "../assets/backgrounds/bg-slide-2.png";
 import background1 from "../assets/backgrounds/bg-slide-3.png";
 import background2 from "../assets/backgrounds/bg-slide-4.png";
 import background3 from "../assets/backgrounds/bg-slide-5.png";
 
-export const item02 = {
+export const orlando = {
   name: "Orlando Duque",
   featuredImage: {
     preview: featuredImageCrop,
     full: featuredImage,
+    alt: "Orlando mid flight after diving from a cliff face",
   },
   content: [
     { id: 0, img: featuredImage },

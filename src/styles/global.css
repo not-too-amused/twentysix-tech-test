@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Metrolpolis";
+  src: local("Metrolpolis"),
+    url("../assets/fonts/Metropolis-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Metrolpolis";
+  src: local("Metrolpolis"),
+    url("../assets/fonts/Metropolis-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
