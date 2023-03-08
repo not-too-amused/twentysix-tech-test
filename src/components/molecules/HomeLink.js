@@ -1,12 +1,16 @@
 import React from "react";
-import { Grid } from "theme-ui";
+import { Link } from "theme-ui";
 import { Logo } from "../atoms/Logo";
 
 export const HomeLink = () => (
-  <Grid
+  <Link
+    href="/"
     sx={{
+      display: "grid",
       placeItems: "center",
       gap: "1px",
+      color: "inherit",
+      textDecoration: "none",
       span: {
         variant: "text.heading",
         fontSize: "sm",
@@ -16,5 +20,5 @@ export const HomeLink = () => (
   >
     <Logo />
     <span>Learning Lab</span>
-  </Grid>
+  </Link>
 );
