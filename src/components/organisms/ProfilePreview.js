@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "theme-ui";
+import { slugify } from "../../utils";
 
 export const ProfilePreview = ({
   profile: {
@@ -10,6 +11,7 @@ export const ProfilePreview = ({
 }) => {
   return (
     <Link
+      href={`/${slugify(name)}`}
       sx={{
         position: "relative",
         aspectRatio: "1.044 / 1",
