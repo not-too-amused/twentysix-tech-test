@@ -1,13 +1,25 @@
 import React from "react";
-import { Box } from "theme-ui";
+import { Grid } from "theme-ui";
 
 //* assets
 import RuleLines from "../../assets/rule-lines.svg";
 
-export const ContainerWithRule = ({ backgroundImage, children }) => (
-  <Box
+export const ContainerWithRule = ({
+  backgroundImage,
+  children,
+  sx,
+  ...rest
+}) => (
+  <Grid
     sx={{
       position: "relative",
+      placeItems: "center",
+      height: "100%",
+      color: "white",
+      zIndex: 1,
+      px: "xl",
+      textAlign: "center",
+      ...sx,
       "::before": {
         content: "''",
         position: "absolute",
@@ -17,6 +29,8 @@ export const ContainerWithRule = ({ backgroundImage, children }) => (
         bottom: 0,
         zIndex: -2,
         background: `url(${backgroundImage})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
       },
       "::after": {
         content: "''",
@@ -30,7 +44,8 @@ export const ContainerWithRule = ({ backgroundImage, children }) => (
         transform: "rotate(-90deg)",
       },
     }}
+    {...rest}
   >
     {children}
-  </Box>
+  </Grid>
 );

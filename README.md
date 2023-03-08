@@ -1,1 +1,3 @@
-# twentysix-tech-test
+### `npm i`
+
+### `npm start`

@@ -46,7 +46,7 @@ export const ProfilePreview = ({
         ">span": {
           variant: "text.spacedHeading",
           position: "absolute",
-          bottom: "lg",
+          bottom: "xl",
           color: contrastText ? "white" : "text",
         },
       }}

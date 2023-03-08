@@ -12,14 +12,18 @@ export const theme: Theme = {
     "lg": "22px"
   },
   space: {
+    "xs": "5px",
     "sm": "10px",
     "md": "30px",
-    "lg": "75px",
+    "lg": "50px",
+    "xl": "75px"
   },
   sizes: {
+    "xs": "5px",
     "sm": "10px",
     "md": "30px",
-    "lg": "75px"
+    "lg": "50px",
+    "xl": "75px"
   },
   colors: {
       background: '#fff',
@@ -27,6 +31,7 @@ export const theme: Theme = {
     black: "#0F0F0F",
     text: '#181818',
     subtle: '#707070',
+    accent: "#E82735"
   },
 
   //* VARIANTS
@@ -50,6 +55,17 @@ export const theme: Theme = {
         letterSpacing: ".6em",
         transform: "translateX(.6em)"
     }  
+  },
+  styles: {
+    hr: {
+      color: "accent",
+      height: "xs",
+      width: "xl",
+      mx: "auto",
+      borderBottomWidth: "5px",
+      mt: "15px",
+      mb: "md"
+    }
   }
 }
 
